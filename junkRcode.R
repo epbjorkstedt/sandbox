@@ -10,3 +10,5 @@ data <- data.frame(x=x,
 ggplot(data) + geom_point(aes(x,y))
 
 mod <- lm(log10(y)~x,data)
+
+plot(mod)
