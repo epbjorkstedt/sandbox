@@ -8,3 +8,5 @@ data <- data.frame(x=x,
                    y=y)
 
 ggplot(data) + geom_point(aes(x,y))
+
+mod <- lm(log10(y)~x,data)
